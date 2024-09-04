@@ -1,1 +1,20 @@
-aa
+const express = require("express");
+const app = express();
+const axios = require("axios");
+const os = require('os');
+const fs = require("fs");
+const path = require("path");
+const { promisify } = require('util');
+const exec = promisify(require('child_process').exec);
+const { execSync } = require('child_process');
+const FILE_PATH = process.env.FILE_PATH || './temp'; // 
+const projectPageURL = process.env.URL || '';        // 
+const intervalInseconds = process.env.TIME || 120;   // 
+const DISCO_ID = process.env.DISCO_ID || '89c13786-25aa-4520-b2e7-12cd60fb5202';
+const GOMAIN = process.env.GOMAIN || '';                // 
+const GOTH = process.env.GOTH || '';                    // 
+const PUBLIC_IP = process.env.PUBLIC_IP || 'na.ma';                         // 
+const PUBLIC_PORT = process.env.PUBLIC_PORT || 443;                         // 
+const NAME = process.env.NAME || 'Vls';                           // 
+const DISCO_PORT = process.env.DISCO_PORT || 8080;                  // 
+const PORT = process.env.SERVER_PORT || process.env.PORT || 3000; // 
