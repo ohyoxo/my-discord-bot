@@ -1,9 +1,9 @@
 {
-  "name": "discord bot",
+  "name": "my-discord-bot",
   "version": "8.8.8",
-  "description": "my-discord-bot",
+  "description": "discord-bot",
   "main": "index.js",
-  "author": "yoyo",
+  "author": "ohyoxo",
   "repository": "https://github.com/ohyoxo/my-discord-bot",
   "license": "MIT",
   "private": false,
